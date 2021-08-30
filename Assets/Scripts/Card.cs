@@ -24,3 +24,13 @@ using UnityEngine;
         public bool infoTaken= false;
     }
 
+    public class TypeChart
+    {
+        static float[][] chart = 
+        {
+            new float[] {1f, 1f, 1f, 1f}, //orc
+            new float[] {1f, 1f, 1f, 1f}, //human
+            new float[] {1f, 1f, 1f, 1f}, //undead
+            new float[] {1f, 1f, 1f, 1f} //neutral
+        };
+    }
