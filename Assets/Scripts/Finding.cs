@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 public class Finding : MonoBehaviour
 {
     [SerializeField]
@@ -50,11 +51,11 @@ public class Finding : MonoBehaviour
             button.SetActive(true);
             if( enablewrite == true)
             {
-            foreach(Enemy enemy in EnemyManager.instance.Enemies )
+            foreach(Card enemy in EnemyManager.instance.Enemies )
             {
-                if (other.gameObject.name == enemy.EnemyName)
+                if (other.gameObject.name == enemy.EnemyName1)
                 {
-                   enemy.infoTaken = true;
+                   enemy.InfoTaken = true;
                 }
             }
             }
@@ -91,6 +92,5 @@ public class Finding : MonoBehaviour
     {
         enablewrite = true;
     }
-
 
 }

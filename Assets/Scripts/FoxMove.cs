@@ -16,7 +16,7 @@ public class FoxMove : MonoBehaviour
         
          rb = GetComponent<Rigidbody2D>();
     }
-     private void Update() {
+     private void FixedUpdate() {
          if(!Ismoving)
          {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -54,4 +54,8 @@ public class FoxMove : MonoBehaviour
         }
         return true;
     }
+
+
+
+
 }

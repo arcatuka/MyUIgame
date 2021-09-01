@@ -6,7 +6,7 @@ public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager instance;
     public int currentIndex;
-    public List<Enemy> Enemies = new List<Enemy>();
+    public List<Card> Enemies = new List<Card>();
 
     private void Start() {
         currentIndex = 0;

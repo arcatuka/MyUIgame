@@ -16,10 +16,10 @@ public class UIManerEnemy : MonoBehaviour
 
     private void DisplayCard()
     {
-        Slot.transform.GetChild(0).GetComponent<Image>().sprite= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemySprite;
+        Slot.transform.GetChild(0).GetComponent<Image>().sprite= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemySprite1;
             //CardSlots[i].transform.GetChild(0).GetComponent<Image>().sprite= EManer.Enemies[i].EnemySprite;
             //CardSlots[i].transform.GetChild(1).GetComponent<Text>().text= EManer.Enemies[i].EnemyName;
-        Slot.transform.GetChild(1).GetComponent<Text>().text= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemyName;
-        Slot.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemyDes;
+        Slot.transform.GetChild(1).GetComponent<Text>().text= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemyName1;
+        Slot.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text= EnemyManager.instance.Enemies[EnemyManager.instance.currentIndex-1].EnemyDes1;
     }
 }
