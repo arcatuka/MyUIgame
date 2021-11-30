@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+
 public class UIManager : MonoBehaviour
 {
     //public static UIManager instance;
     // Start is called before the first frame update
     
     public GameObject[] CardSlots;
-    private FoxMove Player;
 
 
     // private void Awake() {
@@ -66,39 +64,8 @@ public class UIManager : MonoBehaviour
 
     public void gameMenu()
     {
+        
         SceneManager.LoadScene(2);
     }
-        private Save saveFoxPos()
-    {
-        Save save = new Save();
 
-        save.playerXpos = Player.transform.position.x;
-        save.playerYpos = Player.transform.position.y;
-
-
-        return save;
-    }
-        private void SavedgameJSON()
-    {
-        Save save = saveFoxPos();
-
-        string JsonString = JsonUtility.ToJson(save);
-
-        StreamWriter sw = new StreamWriter(Application.dataPath + "/JSONdata.text");
-        sw.Write(JsonString);
-        sw.Close();
-        Debug.Log("-=-=-=SAVED=-=-=-");
-    }
-
-    private void LoadgameJSON()
-    {
-        if(File.Exists(Application.dataPath + "/JSONdata.text"))
-        {
-            StreamReader sr = new StreamReader(Application.dataPath+ "/JSONdata.text");
-            string JsonString = sr.ReadToEnd();
-            sr.Close();
-            Save save = JsonUtility.FromJson<Save>(JsonString);
-            
-        }
-    }
 }

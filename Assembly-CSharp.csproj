@@ -46,8 +46,9 @@
      <Compile Include="Assets\Scripts\Finding.cs" />
      <Compile Include="Assets\Scripts\E.cs" />
      <Compile Include="Assets\Scripts\Weapon_base.cs" />
+     <Compile Include="Assets\Scripts\EnemyChasing.cs" />
+     <Compile Include="Assets\Scripts\EnemyinBattle.cs" />
      <Compile Include="Assets\Scripts\cameraFollow.cs" />
-     <Compile Include="Assets\Scripts\Entity.cs" />
      <Compile Include="Assets\Scripts\BattleSystem.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

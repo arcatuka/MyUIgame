@@ -39,6 +39,7 @@ public class Finding : MonoBehaviour
     //     Gizmos.DrawWireSphere(transform.position, range);
     // }
     private void Start() {
+        button = GameObject.FindGameObjectWithTag("Mybutton");
         button.SetActive(false);
         // MenuUI.SetActive(false);
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -90,6 +91,7 @@ public class Finding : MonoBehaviour
     // }
     public void checking()
     {
+        Debug.Log("Get info from enemy");
         enablewrite = true;
     }
 

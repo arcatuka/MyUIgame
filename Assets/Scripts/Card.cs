@@ -33,6 +33,7 @@ using UnityEngine;
     public int Enemyattack1 { get => Enemyattack; set => Enemyattack = value; }
     public int Enemydefense1 { get => Enemydefense; set => Enemydefense = value; }
     public bool InfoTaken { get => infoTaken; set => infoTaken = value; }
+    public int EID1 { get => EID; set => EID = value; }
 
     public class TypeChart
     {

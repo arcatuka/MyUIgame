@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World.unity
     guid: 557e4c58e1eb2e04a9b6ceaa099a1712
+  - enabled: 1
+    path: Assets/Scenes/BattleMonster.unity
+    guid: c6494a0c563dc02418b8d2a84120be03
   m_configObjects: {}

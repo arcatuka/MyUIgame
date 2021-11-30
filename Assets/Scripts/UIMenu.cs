@@ -10,7 +10,9 @@ public class UIMenu : MonoBehaviour
     private FoxMove Player;
     void Start()
     {
-        MenuUI.SetActive(false);
+
+        MenuUI.SetActive(true);
+        Time.timeScale = 0f;
         Player = FindObjectOfType<FoxMove>();
     }
 
@@ -44,6 +46,8 @@ public class UIMenu : MonoBehaviour
 
         save.playerXpos = Player.transform.position.x;
         save.playerYpos = Player.transform.position.y;
+        PlayerPrefs.SetFloat("Xpos", Player.transform.position.x);
+        PlayerPrefs.SetFloat("Ypos", Player.transform.position.y);
 
 
         return save;
@@ -71,7 +75,6 @@ public class UIMenu : MonoBehaviour
             Player.transform.position = new Vector2(save.playerXpos,save.playerYpos);
         }
     }
- 
 }
    [System.Serializable]
     public class Save
